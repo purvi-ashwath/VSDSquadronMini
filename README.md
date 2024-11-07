@@ -83,6 +83,62 @@ CLA adders are widely used in high-speed arithmetic circuits within processors, 
 
 From the above observation it is clear that all three compilers/simulators produce the same output for the C Code.
 
+### TASK 3
+## A. List various RISC-V instruction type (R, I, S, B, U, J) after going through RISC-V software documentation.
+# What is RISC-V?
+(i)  RISC-V is an open-source instruction set architecture (ISA) that allows developers to develop processors for specific applications.
+(ii) RISC-V is based on reduced instruction set computer principles and is the fifth generation of processors built on this concept.
+
+# INSTRUCTIONS FORMAT IN RISC-V
+The instruction format of a processor refers to how machine language instructions are structured and organized for execution by the processor. These instructions are composed of sequences of 0s and 1s, each encoding information about the data's location and the operations to be performed.
+
+There are 6 instruction formats in RISC-V:
+1. R-format
+2. I-format
+3. S-format
+4. B-format
+5. U-format
+6. J-format
+
+![image](https://github.com/user-attachments/assets/186ae499-fe22-4dcf-855c-ab244c572304)
+1. "opcode" represents a 7-bit instruction operator code, its role is to distinguish between different instructions.
+2. "funct3" represents a 3-bit function code.it is an additional opcode.
+3. "funct7" represents a 7-bit function code, which can help distinguish different kinds of instructions.
+4. "rs1" and "rs2" represent two 5-bit source registers.
+5. "rd" is a 5-bit destination register, and the result of the instruction operation is stored in rd.
+6. "imm" represents an immediate number of different lengths, which can be used directly as an operand.
+
+# R-type Instruction (Register-Type)
+![image](https://github.com/user-attachments/assets/387e83a2-1e84-4468-878c-dba5df1c79b0)
+funct7 (bits 31-25): Used to differentiate between similar instructions. Often used for encoding the operation, such as shift amount or sign extension.\
+rs2 (bits 24-20): Source register 2.\
+rs1 (bits 19-15): Source register 1.\
+funct3 (bits 14-12): Specifies the operation to be performed (e.g., add, subtract, etc.).\
+rd (bits 11-7): Destination register.\
+opcode (bits 6-0): Specifies the type of instruction (e.g., arithmetic, logical).\
+Operation: R-Type instructions perform register-to-register operations like arithmetic (ADD, SUB), logical (AND, OR), and shifts (SLL, SRL).
+
+# I-type Instruction (Immediate-Type)
+![image](https://github.com/user-attachments/assets/f7a02162-9236-4ffd-a72b-9dbb340b2a93)
+
+imm[11:0] (bits 31-20): Immediate value (12-bit signed) that is directly used as an operand.\
+rs1 (bits 19-15): Source register.\
+funct3 (bits 14-12): Specifies the operation (e.g., load, add immediate, etc.).\
+rd (bits 11-7): Destination register.\
+opcode (bits 6-0): Specifies the type of instruction.\
+Usage: I-Type instructions are typically used for operations that involve an immediate value, such as ADDI (add immediate), load instructions (LW), and some system calls.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
