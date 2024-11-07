@@ -108,7 +108,7 @@ There are 6 instruction formats in RISC-V:
 5. "rd" is a 5-bit destination register, and the result of the instruction operation is stored in rd.
 6. "imm" represents an immediate number of different lengths, which can be used directly as an operand.
 
-# R-type Instruction (Register-Type)
+# 1. R-type Instruction (Register-Type):
 ![image](https://github.com/user-attachments/assets/387e83a2-1e84-4468-878c-dba5df1c79b0)
 funct7 (bits 31-25): Used to differentiate between similar instructions. Often used for encoding the operation, such as shift amount or sign extension.\
 rs2 (bits 24-20): Source register 2.\
@@ -118,15 +118,64 @@ rd (bits 11-7): Destination register.\
 opcode (bits 6-0): Specifies the type of instruction (e.g., arithmetic, logical).\
 Operation: R-Type instructions perform register-to-register operations like arithmetic (ADD, SUB), logical (AND, OR), and shifts (SLL, SRL).
 
-# I-type Instruction (Immediate-Type)
+# 2. I-type Instruction (Immediate-Type):
 ![image](https://github.com/user-attachments/assets/f7a02162-9236-4ffd-a72b-9dbb340b2a93)
-
 imm[11:0] (bits 31-20): Immediate value (12-bit signed) that is directly used as an operand.\
 rs1 (bits 19-15): Source register.\
 funct3 (bits 14-12): Specifies the operation (e.g., load, add immediate, etc.).\
 rd (bits 11-7): Destination register.\
 opcode (bits 6-0): Specifies the type of instruction.\
 Usage: I-Type instructions are typically used for operations that involve an immediate value, such as ADDI (add immediate), load instructions (LW), and some system calls.
+
+# 3. S-type Instruction (Store-Type):
+![Screenshot 2024-11-07 214733](https://github.com/user-attachments/assets/11f2ca44-fef3-4f8c-9a7b-16a5ee5c6915)
+imm[11:5] (bits 31-25): Upper 7 bits of the immediate value.\
+rs2 (bits 24-20): Source register 2 (data to be stored).\
+rs1 (bits 19-15): Source register 1 (base address).\
+funct3 (bits 14-12): Specifies the operation (e.g., store byte, store word).\
+imm[4:0] (bits 11-7): Lower 5 bits of the immediate value.\
+opcode (bits 6-0): Specifies the type of instruction.\
+Usage: S-Type instructions are used for store operations, where the value in rs2 is stored in memory at the address computed by adding the immediate value to rs1. Example: SW (store word).
+
+# 4. B-Type Instruction (Branch-Type):
+![Screenshot 2024-11-07 214740](https://github.com/user-attachments/assets/64e46d79-2783-4cb7-9e25-4239ede3e987)
+imm[12] (bit 31): 12th bit of the immediate value.\
+imm[10:5] (bits 30-25): Bits 10 through 5 of the immediate value.\
+rs2 (bits 24-20): Source register 2 (used for comparison).\
+rs1 (bits 19-15): Source register 1 (used for comparison).\
+funct3 (bits 14-12): Specifies the condition for the branch (e.g., equal, less than).\
+imm[4:1] (bits 11-8): Bits 4 through 1 of the immediate value.\
+imm[11] (bit 7): 11th bit of the immediate value.\
+opcode (bits 6-0): Specifies the type of instruction.\
+Usage: B-Type instructions are used for conditional branching based on comparisons between rs1 and rs2. Examples include BEQ (branch if equal) and BNE (branch if not equal).
+
+# 5. U-Type Instruction (Upper Immediate-Type):
+![Screenshot 2024-11-07 214746](https://github.com/user-attachments/assets/267c799c-3dd1-47e8-862c-0859ca6e3d81)
+imm[31:12] (bits 31-12): 20-bit immediate value.\
+rd (bits 11-7): Destination register.\
+opcode (bits 6-0): Specifies the type of instruction.\
+Usage: U-Type instructions are used to load a 20-bit immediate value into the upper 20 bits of a register. Example: LUI (load upper immediate).
+
+# 6. J-Type Instruction (Jump-Type):
+![Screenshot 2024-11-07 214753](https://github.com/user-attachments/assets/bb4c4c3e-747a-4b6f-845e-05487e6c8bd7)
+imm[20] (bit 31): 20th bit of the immediate value.\
+imm[10:1] (bits 30-21): Bits 10 through 1 of the immediate value.\
+imm[11] (bit 20): 11th bit of the immediate value.\
+imm[19:12] (bits 19-12): Bits 19 through 12 of the immediate value.\
+rd (bits 11-7): Destination register (used to store the return address).\
+opcode (bits 6-0): Specifies the type of instruction.\
+Usage: J-Type instructions are used for jump operations, such as JAL (jump and link), where the program jumps to a specific address and stores the return address in the destination register.
+
+## B. Identify 15 unique RISC-V instructions from riscv-objdmp of your application code.Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions.
+
+ ![image](https://github.com/user-attachments/assets/b63a253c-bf67-41c0-9313-df34e362bfd9)
+
+
+
+
+
+
+
 
 
 
