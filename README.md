@@ -305,6 +305,27 @@ funct7: 0000000 (7 bits)\
 32-bit instruction: (0000000 00100 00001 100 01000 0110011)2
 
 
+## TASK 4: By making use of RISC-V Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms
+NOTE: Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : iiitb_rv32i
+
+### Steps to perform functional simulation of RISCV
+1. Open your terminal and type the following to install iverilog and GTKWave
+   $   sudo apt get update
+   $   sudo apt get install iverilog gtkwave
+2. Create a new directory with your name mkdir <your_name>
+3. Create two files by using touch command as purvi_rv32i.v and purvi_rv32i_tb.v
+4. Copy the code from the reference github repo and paste it in your verilog and testbench files
+5. To run and simulate the verilog code, enter the following command:
+   $ iverilog -o purvi_riscv purvi_rv32i.v purvi_rv32i_tb.v
+   $ ./purvi_riscv
+6. The above will result in a vcd file being formed and the name of the file will be listed in the comments
+7. To see the simulation waveform in GTKWave, enter the following command
+   $ gtkwave iiitb_rv32i.vcd
+8. The GTKWave will be opened.
+9. Drag the required signals.
+10. Observe the waveform.
+
+
 
 
 
