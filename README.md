@@ -330,15 +330,36 @@ NOTE: Since the designing of RISCV Architecture and writing it's testbench is no
 11. Observe the waveform.
 
 ### Instruction 1 : ADD R6, R2, R1
-![Screenshot 2024-11-08 221742](https://github.com/user-attachments/assets/099bf13e-7a12-4de9-be41-35ee28d91aa5)
+
+![Screenshot 2024-11-09 145751](https://github.com/user-attachments/assets/af55c210-89e9-42a9-8b79-b0ff13ba2513)
 
 ### Instruction 2 : SUB R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/a5c8d0a6-790d-4176-a34a-85c2ec3aa0b2)
+
 ### Instruction 3 : AND R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/2838ec32-d51e-4a57-a688-b00dae9122ed)
+
 ### Instruction 4 : OR R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/0826ea76-9c39-4591-aee8-4544512ff915)
+
 ### Instruction 5 : XOR R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/a4fd73d7-e662-44b6-bcc8-72d252a87efc)
+
 ### Instruction 6 : SLT R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/1a586268-209e-42fe-9265-f92bb77f0dcc)
+
 ### Instruction 7 : ADDI R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/c2d74fe7-2dba-42f7-8384-d3dbf58f0e66)
+
 ### Instruction 8 : BEQ R7, R1, R2
+
+![image](https://github.com/user-attachments/assets/d55d211b-a4e6-438c-8746-2b956a377613)
 
 
 
