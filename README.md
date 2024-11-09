@@ -321,15 +321,24 @@ NOTE: Since the designing of RISCV Architecture and writing it's testbench is no
 6. The above will result in a vcd file being formed and the name of the file will be listed in the comments
 7. To see the simulation waveform in GTKWave, enter the following command
    $ gtkwave iiitb_rv32i.vcd
-8. The GTKWave will be opened.
-9. Drag the required signals.
-10. Observe the waveform.
+   ![terminalgtk](https://github.com/user-attachments/assets/fc5b8948-e7a2-425d-b84d-826085e30986)
 
+9. The GTKWave will be opened.
+10. Drag the required signals.
+    ![signals](https://github.com/user-attachments/assets/fbc5122b-0851-44f9-8a13-c222f8b5344f)
 
+11. Observe the waveform.
 
+### Instruction 1 : ADD R6, R2, R1
+![Screenshot 2024-11-08 221742](https://github.com/user-attachments/assets/099bf13e-7a12-4de9-be41-35ee28d91aa5)
 
-
-
+### Instruction 2 : SUB R7, R1, R2
+### Instruction 3 : AND R7, R1, R2
+### Instruction 4 : OR R7, R1, R2
+### Instruction 5 : XOR R7, R1, R2
+### Instruction 6 : SLT R7, R1, R2
+### Instruction 7 : ADDI R7, R1, R2
+### Instruction 8 : BEQ R7, R1, R2
 
 
 
