@@ -362,7 +362,7 @@ NOTE: Since the designing of RISCV Architecture and writing it's testbench is no
 ![image](https://github.com/user-attachments/assets/d55d211b-a4e6-438c-8746-2b956a377613)
 
 
-## TASK 5:  Implementing Carry Look Ahead Adder using VSDSquadron Mini
+## TASK 5: HUMIDITY SENSOR USING DHT11
 
 ### OVERVIEW:
 This project demonstrates how to interface the DHT11 Temperature and Humidity Sensor with the VSD Squadron Mini to measure both temperature and humidity using C programming and the GCC compiler. The DHT11 sensor provides both temperature and humidity data, and we will write code to read both values and display them on a console.\
