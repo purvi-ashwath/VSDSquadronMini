@@ -380,11 +380,22 @@ The VSD Squadron Mini will control the GPIO pins to communicate with the DHT11 s
 VCC (DHT11) → 5V (VSD Squadron Mini)\
 GND (DHT11) → GND (VSD Squadron Mini)\
 DATA (DHT11) → GPIO7(PC7 or PD7) (VSD Squadron Mini)\
-Pull-up Resistor (10kΩ): Connect a 10kΩ resistor between DATA and VCC to ensure stable data transmission.
+
 
 ![image](https://github.com/user-attachments/assets/96365aaa-ba59-46f7-939b-5c8c1df746c0)
 
 ![Screenshot 2024-11-12 123136](https://github.com/user-attachments/assets/35eea017-a43e-4840-88be-ecf3a04c5d23)
+
+### CODE SNIPPET:
+![Screenshot 2024-11-16 221840](https://github.com/user-attachments/assets/380e8d81-bb21-4501-9a2e-de5e41643b76)
+
+### APPLICATION VIDEO:
+https://drive.google.com/file/d/11YrRQjCxbSnrZjK0c7f9YVHC8APrJ6cc/view?usp=sharing
+
+## ACKNOWLEDGEMENT:
+
+I would like to extend my heartfelt gratitude to Kunal Ghosh Sir for providing this outstanding internship experience focused on RISC-V architecture using the VSDSquadron Mini. The experience has been exceptionally enriching, offering deep insights and hands-on knowledge that have significantly advanced my understanding and skills in this field. This program has not only laid a strong foundation in RISC-V architecture but has also enhanced my practical skills and technical knowledge. The comprehensive curriculum, coupled with hands-on projects, has been invaluable in preparing me for future challenges in the field. The support and mentorship provided throughout the internship have been crucial to my growth and development.
+
 
 
 
