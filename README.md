@@ -390,7 +390,7 @@ DATA (DHT11) → GPIO7(PC7 or PD7) (VSD Squadron Mini)\
 ![Screenshot 2024-11-16 221840](https://github.com/user-attachments/assets/380e8d81-bb21-4501-9a2e-de5e41643b76)
 
 ### APPLICATION VIDEO:
-https://drive.google.com/file/d/11YrRQjCxbSnrZjK0c7f9YVHC8APrJ6cc/view?usp=sharing
+https://drive.google.com/file/d/15kuHQunuFRDwYN6v2hPmsLfcG7vrGt9o/view?usp=sharing
 
 ## ACKNOWLEDGEMENT:
 
